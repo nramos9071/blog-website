@@ -8,7 +8,6 @@ body {
 }
 
 header {
-    background-color: rgb(48, 200, 238);
     margin: 0px;
     padding: 20px;
 }
@@ -55,11 +54,50 @@ a {
 
 }
 
+.light-body {
+    background-color:rgb(44, 63, 167);
+}
+
+.light-header {
+    background-color:rgb(48, 200, 238);
+}
+
+.dark-body {
+    background-color: black;
+    color: white;
+}
+
+.dark-header {
+    background-color: rgb(44, 63, 167);
+    color: white;
+}
+
+#light-mode:hover {
+    cursor: pointer;
+
+}
+
 #post-header {
     display:flex;
     justify-content: center;
 }
 
 #blog-post {
-    height: 200px;
+    padding: 0 0 115px;
+}
+
+#img-container {
+    margin: 10px;
+    padding: 20px;
+    border: 10px;
+    display: flex;
+    border-style: solid;
+    border-color: red;
+    justify-content: center;
+}
+
+#img-front {
+    height: 500px;
+    width: 700px;
+    display: flex;
 }
