@@ -29,12 +29,33 @@ a {
 
 }
 
-.info-box {
-    
+.info-container {
+
+
+    Width: 38%;
     margin: 10px;
     padding: 20px;
     display: flex;
     position: relative;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     float: left;
+}
+
+.input-container {
+
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+}
+
+#post-header {
+    display:flex;
+    justify-content: center;
 }
