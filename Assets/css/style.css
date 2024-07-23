@@ -59,3 +59,7 @@ a {
     display:flex;
     justify-content: center;
 }
+
+#blog-post {
+    height: 200px;
+}
