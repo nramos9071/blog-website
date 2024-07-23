@@ -1,0 +1,38 @@
+:root {
+    background-color: rgb(44, 63, 167);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(48, 200, 238);
+    margin: 0px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+a {
+    padding: 10px;
+}
+
+section {
+    margin: 20px;
+    padding:20px;
+    border: 20px;
+    border-style: solid;
+    display: flex;
+}
+
+.main-header {
+
+    display: inline-block;
+
+}
