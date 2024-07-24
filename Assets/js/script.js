@@ -9,6 +9,15 @@ const lightHeader = document.querySelector('.light-header')
 const lightMode = document.querySelector('#light-mode')
 let forms= document.getElementsByTagName('input')
 
+function validateForm() {
+    if ((userName.value == null || userName.value == "") && (blogTitle.value == null || blogTitle.value == "") && (blogPost.value == null || blogPost.value == "")) {
+        alert('Please fill out entire form.');
+        return true;
+    } else {
+        return false;
+    }
+}
+
 let mode = 'dark-body'
 
 lightMode.addEventListener('click', function () {
@@ -51,9 +60,7 @@ lightMode.addEventListener('click', function () {
     
 })
 
-/*function sendAlert() {
-    const labelName = 
-}*/
+
 
 
 submitbtn.addEventListener('click', function () {
@@ -65,12 +72,13 @@ submitbtn.addEventListener('click', function () {
         blogPost: blogPost.value
     };
 
-    localStorage.setItem('blogSubmit', JSON.stringify(blogSubmit));
-
-  
+   
+        
+    if (validateForm() === false) {
+        localStorage.setItem('blogSubmit', JSON.stringify(blogSubmit));
+        window.location.href="./blog.html";   
+        }   
     
-    
-
 })
 
 
