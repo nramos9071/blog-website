@@ -3,17 +3,15 @@ const darkHeader = document.querySelector('.dark-header');
 const lightBody = document.querySelector('.light-body');
 const lightHeader = document.querySelector('.light-header');
 const lightMode = document.querySelector('#light-mode');
-let blogSubmit = localStorage.getItem('blogSubmit');
 let blogSection = document.getElementById('blog-section');
-const bringOver = JSON.parse(blogSubmit);
+const bringOver = JSON.parse(localStorage.getItem('blogSubmit'));
+
 
 let mode = 'dark-body'
 
 lightMode.addEventListener('click', function () {
 
     event.preventDefault();
-
-    console.log('working');
 
     if (mode === 'dark-body') {
         mode = 'light-body'
@@ -34,8 +32,6 @@ lightMode.addEventListener('click', function () {
 
     event.preventDefault();
 
-    console.log('working');
-
     if (mode1 === 'dark-header') {
         mode1 = 'light-header'
         darkHeader.setAttribute('class', 'light-header');
@@ -50,14 +46,24 @@ lightMode.addEventListener('click', function () {
 })
 
 
+
+
 function working() {
 
     const newPost = document.createElement('section');
-    const content = document.createElement('p')
+    const content = document.createElement('p');
+   
     
     blogSection.appendChild(newPost);
     newPost.appendChild(content);
-    console.log('working');
+    content.textContent = bringOver;
+
+  
+
+   
+  
+   
+    
 }
 
-working();
+blogSection.addEventListener('load', working())
