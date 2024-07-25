@@ -64,7 +64,7 @@ function working() {
     blogSection.appendChild(newPost);
     addStyle();
     newPost.appendChild(content);
-    content.textContent = bringOver.userName;
+    content.textContent = "User Name: " + bringOver.userName;
     
 
 
@@ -86,7 +86,7 @@ function working2() {
     blogSection.appendChild(newPost2);
     addStyle2();
     newPost2.appendChild(content2);
-    content2.textContent = bringOver.blogTitle;
+    content2.textContent = "Blog Title: " + bringOver.blogTitle;
     
     console.log(bringOver.blogTitle);
 
@@ -105,7 +105,7 @@ function working3() {
     blogSection.appendChild(newPost3);
     addStyle3();
     newPost3.appendChild(content3);
-    content3.textContent = bringOver.blogPost;
+    content3.textContent = "Blog: " + bringOver.blogPost;
     
     console.log(bringOver.blogPost);
 

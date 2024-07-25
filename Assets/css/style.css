@@ -16,11 +16,13 @@ nav {
     display: flex;
     float: right;
     align-items: center;
-    text-decoration: none;
+    
 }
 
 a {
     padding: 10px;
+    text-decoration: none;
+    
 }
 
 footer {
@@ -69,9 +71,7 @@ footer {
     background-color:rgb(48, 200, 238);
 }
 
-.light-footer {
-    background-color:rgb(48, 200, 238);
-}
+
 
 
 .dark-body {
@@ -84,10 +84,7 @@ footer {
     color: white;
 }
 
-.dark-footer {
-    background-color: rgb(44, 63, 167);
-    color: white;
-}
+
 
 
 #light-mode:hover {
@@ -118,4 +115,13 @@ footer {
     height: 500px;
     width: 700px;
     display: flex;
+}
+
+@media screen and (max-width: 704px) {
+    
+    #img-front {
+        height: 100px;
+        width: 100px;
+
+    }
 }

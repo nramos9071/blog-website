@@ -23,18 +23,9 @@ a {
     padding: 10px;
 }
 
-/*section {
-    margin: 20px;
-    padding:20px;
-    border: 10px;
-    border-style: solid;
-    border-color: red;
-    color: red;
-    font-size: 25px;
-    display: flex;
-}*/
 
-.main-section {
+.main-section,
+#prior-blogs {
     margin: 20px;
     padding:20px;
     border: 10px;
