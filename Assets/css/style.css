@@ -16,13 +16,11 @@ nav {
     display: flex;
     float: right;
     align-items: center;
-    
 }
 
 a {
     padding: 10px;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 footer {
@@ -32,14 +30,11 @@ footer {
 }
 
 .main-header {
-
     display: inline-block;
 
 }
 
 .info-container {
-
-
     Width: 38%;
     margin: 10px;
     padding: 20px;
@@ -52,15 +47,12 @@ footer {
 }
 
 .input-container {
-
     width: 50%;
     margin: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
-
-
 }
 
 .light-body {
@@ -71,9 +63,6 @@ footer {
     background-color:rgb(48, 200, 238);
 }
 
-
-
-
 .dark-body {
     background-color: black;
     color: white;
@@ -83,9 +72,6 @@ footer {
     background-color: rgb(44, 63, 167);
     color: white;
 }
-
-
-
 
 #light-mode:hover {
     cursor: pointer;
@@ -122,6 +108,5 @@ footer {
     #img-front {
         height: 100px;
         width: 100px;
-
     }
 }

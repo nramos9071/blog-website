@@ -24,19 +24,13 @@ lightMode.addEventListener('click', function () {
 
     event.preventDefault();
 
-    console.log('working');
-
     if (mode === 'dark-body') {
         mode = 'light-body'
         darkBody.setAttribute('class', 'light-body')
     } else {
-        
         mode = 'dark-body'
         darkBody.setAttribute('class', 'dark-body')
     }
-
-
-    
 })
 
 let mode1 = 'dark-header'
@@ -44,8 +38,6 @@ let mode1 = 'dark-header'
 lightMode.addEventListener('click', function () {
 
     event.preventDefault();
-
-    console.log('working');
 
     if (mode1 === 'dark-header') {
         mode1 = 'light-header'
@@ -55,15 +47,7 @@ lightMode.addEventListener('click', function () {
         mode1 = 'dark-header'
         darkHeader.setAttribute('class', 'dark-header')
     }
-
-
-    
 })
-
-
-
-
-
 
 submitbtn.addEventListener('click', function () {
     
@@ -73,15 +57,14 @@ submitbtn.addEventListener('click', function () {
         blogTitle: blogTitle.value,
         blogPost: blogPost.value
     };
-
-   
-        
+      
     if (validateForm() === false) {
         localStorage.setItem('blogSubmit', JSON.stringify(blogSubmit));
-        window.location.href="./blog.html";   
-        }   
-    
+        window.location.href="./blog.html"; 
+        };
 })
+
+
 
 
 

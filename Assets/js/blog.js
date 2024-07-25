@@ -6,8 +6,6 @@ const lightMode = document.querySelector('#light-mode');
 let blogSection = document.getElementById('blog-section');
 const bringOver = JSON.parse(localStorage.getItem('blogSubmit'));
 
-
-
 let mode = 'dark-body'
 
 lightMode.addEventListener('click', function () {
@@ -21,10 +19,7 @@ lightMode.addEventListener('click', function () {
         
         mode = 'dark-body'
         darkBody.setAttribute('class', 'dark-body');
-    }
-
-
-    
+    }   
 })
 
 let mode1 = 'dark-header'
@@ -40,15 +35,8 @@ lightMode.addEventListener('click', function () {
         
         mode1 = 'dark-header'
         darkHeader.setAttribute('class', 'dark-header');
-    }
-
-
-    
+    }   
 })
-
-
-
-
 
 function working() {
 
@@ -59,19 +47,11 @@ function working() {
         blogSection.classList.add('main-section')
         newPost.classList.add('content-section1')
     }
-   
-    
+
     blogSection.appendChild(newPost);
     addStyle();
     newPost.appendChild(content);
     content.textContent = "User Name: " + bringOver.userName;
-    
-
-
-
-    console.log(bringOver.userName);
-
-    
 }
 
 function working2() {
@@ -88,9 +68,7 @@ function working2() {
     newPost2.appendChild(content2);
     content2.textContent = "Blog Title: " + bringOver.blogTitle;
     
-    console.log(bringOver.blogTitle);
-
-       
+    console.log(bringOver.blogTitle);      
 }
 
 function working3() {
@@ -100,18 +78,11 @@ function working3() {
 
     function addStyle3() {
         newPost3.classList.add('content-section3')
-    }
-   
+    }  
     blogSection.appendChild(newPost3);
     addStyle3();
     newPost3.appendChild(content3);
-    content3.textContent = "Blog: " + bringOver.blogPost;
-    
-    console.log(bringOver.blogPost);
-
-
-
-    
+    content3.textContent = "Blog: " + bringOver.blogPost;    
 }
 
 blogSection.addEventListener('load', working(), working2(), working3())
