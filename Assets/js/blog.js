@@ -4,7 +4,8 @@ const lightBody = document.querySelector('.light-body');
 const lightHeader = document.querySelector('.light-header');
 const lightMode = document.querySelector('#light-mode');
 let blogSection = document.getElementById('blog-section');
-const bringOver = JSON.parse(localStorage.getItem('blogSubmit'));
+/*const bringOver = JSON.parse(localStorage.getItem('blogSubmit'));*/
+let bringOver = localStorage.getItem('blogSubmit')
 
 
 let mode = 'dark-body'
@@ -57,6 +58,7 @@ function working() {
     blogSection.appendChild(newPost);
     newPost.appendChild(content);
     content.textContent = bringOver;
+    console.log(bringOver)
 
   
 
