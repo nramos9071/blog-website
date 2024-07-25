@@ -23,6 +23,12 @@ a {
     padding: 10px;
 }
 
+footer {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+}
+
 .main-header {
 
     display: inline-block;
@@ -63,6 +69,11 @@ a {
     background-color:rgb(48, 200, 238);
 }
 
+.light-footer {
+    background-color:rgb(48, 200, 238);
+}
+
+
 .dark-body {
     background-color: black;
     color: white;
@@ -72,6 +83,12 @@ a {
     background-color: rgb(44, 63, 167);
     color: white;
 }
+
+.dark-footer {
+    background-color: rgb(44, 63, 167);
+    color: white;
+}
+
 
 #light-mode:hover {
     cursor: pointer;

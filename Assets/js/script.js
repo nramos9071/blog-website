@@ -1,13 +1,13 @@
-let userName = document.querySelector('#user-name')
-let blogTitle = document.querySelector('#blog-title')
-let blogPost = document.querySelector('#blog-post')
-let submitbtn = document.querySelector('#submit-button')
-const darkBody = document.querySelector('.dark-body')
-const darkHeader = document.querySelector('.dark-header')
-const lightBody = document.querySelector('.light-body')
-const lightHeader = document.querySelector('.light-header')
-const lightMode = document.querySelector('#light-mode')
-let forms= document.getElementsByTagName('input')
+let userName = document.querySelector('#user-name');
+let blogTitle = document.querySelector('#blog-title');
+let blogPost = document.querySelector('#blog-post');
+let submitbtn = document.querySelector('#submit-button');
+const darkBody = document.querySelector('.dark-body');
+const darkHeader = document.querySelector('.dark-header');
+const lightBody = document.querySelector('.light-body');
+const lightHeader = document.querySelector('.light-header');
+const lightMode = document.querySelector('#light-mode');
+let forms= document.getElementsByTagName('input');
 
 function validateForm() {
     if ((userName.value == null || userName.value == "") && (blogTitle.value == null || blogTitle.value == "") && (blogPost.value == null || blogPost.value == "")) {
@@ -59,6 +59,8 @@ lightMode.addEventListener('click', function () {
 
     
 })
+
+
 
 
 
